@@ -12,7 +12,7 @@ from sklearn.metrics import confusion_matrix,roc_curve,precision_recall_curve
 from sklearn.metrics import precision_score, recall_score
 
 # Loading the dataset.
-@st.cache_data()
+@st.cache()
 def load_data():
     file_path = "glass-types.csv"
     df = pd.read_csv(file_path, header = None)
